@@ -10,7 +10,7 @@ import ReqDetailContainer from './ReqDetailContainer';
 import Styles from './MainContainer.styles.scss';
 import TimelineContainer from './TimelineContainer';
 import { useTheme } from '../state/theme/Context';
-import NetworkTableFooter from './../Components/NetworkTable/NetworkTableFooter';
+// import NetworkTableFooter from './../Components/NetworkTable/NetworkTableFooter';
 
 const MainContainer = ({ onRequestSelect }) => {
   const { state } = useNetwork();
@@ -32,7 +32,7 @@ const MainContainer = ({ onRequestSelect }) => {
           <NetworkTableContainer onRequestSelect={onRequestSelect} />
           {showReqDetail && <ReqDetailContainer />}
         </section>
-        {actualData.size ? <NetworkTableFooter dataSummary={dataSummary} /> : null}
+        {/* {actualData.size ? <NetworkTableFooter dataSummary={dataSummary} /> : null} */}
       </LoaderContainer>
     </>
   );
