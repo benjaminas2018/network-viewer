@@ -60,3 +60,8 @@ near: find request near to timestamp
 before: find request exactBefore the timestamp
 after: find request exactAfter the timestamp |
 | scrollTimeStamp   | Number   | null   |  | Find and highlight network request by timestamp |
+
+
+#### How to use local modules
+change code, and run ```npm run build:package:ci```
+and the copy "lib,umd,es6" folder to app node module network_viewer folder
