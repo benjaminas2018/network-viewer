@@ -18,9 +18,7 @@ const NetworkTableFooter = ({ dataSummary, showAllInfo }) => (
         <span>{`DOMContentLoaded: ${formatTime(dataSummary.get('timings').DOMContentLoaded)}`}</span>
         <span>{`Load: ${formatTime(dataSummary.get('timings').onLoad)}`}</span>
       </>
-    ) : (
-      <span>{`${dataSummary.get('totalRequests')} requests`}</span>
-    )}
+    ) : null}
   </div>
 );
 
@@ -30,7 +28,7 @@ NetworkTableFooter.propTypes = {
 };
 
 NetworkTableFooter.defaultProps = {
-  showAllInfo: true,
+  showAllInfo: false,
 };
 
 export default NetworkTableFooter;
